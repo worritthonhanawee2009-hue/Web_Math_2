@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#eef2ff">
+    <meta name="description" content="สรุปสถิติการเข้าเรียน โรงเรียนนาคประสิทธิ์">
+    <title>การเข้าเรียน | โรงเรียนนาคประสิทธิ์</title>
+    <link rel="stylesheet" href="./css/attendance.css">
+    <link rel="stylesheet" href="./css/nav-highlight.css">
+    <link rel="stylesheet" href="./css/blue-pink-theme.css">
+    <link rel="stylesheet" href="./css/dark-mode.css">
+    <script src="./scripts/app-state.js" defer></script>
+    <script src="./scripts/nav-highlight.js" defer></script>
+    <script src="./scripts/theme.js" defer></script>
+    <script src="./scripts/attendance.js" defer></script>
+    <script src="./scripts/typography.js" defer></script>
+    <script src="./scripts/student-profile.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./home_1.html" aria-label="กลับหน้าหลัก">
+        <img src="./images/school-logo.png" alt="">
+        <span><strong>คณิตศาสตร์</strong><small>โรงเรียนนาคประสิทธิ์</small></span>
+      </a>
+      <nav class="main-nav" aria-label="เมนูหลัก">
+        <a href="./learn.html">บทเรียน</a>
+        <a href="./exercises.html">แบบฝึกหัด</a>
+        <a href="./attendance.html" aria-current="page">เข้าเรียน</a>
+        <a href="./scores.html">คะแนน</a>
+        <a href="./settings.html">ตั้งค่า</a>
+      </nav>
+      <a class="profile" href="./settings.html"><span class="avatar">น</span><span>โหมดตัวอย่าง</span></a>
+    </header>
+
+    <section class="page-heading">
+      <div>
+        <p class="eyebrow">MATH LEARNING</p>
+        <h1>สถิติการเข้าเรียน</h1>
+        <p class="subtitle">ภาพรวมการมาเรียนและการขาดเรียนในช่วง 14 วันเรียนล่าสุด</p>
+      </div>
+      <a class="back" href="./home_1.html">← กลับหน้าหลัก</a>
+    </section>
+
+    <main class="content">
+      <section class="summary-grid" aria-label="สรุปการเข้าเรียน">
+        <article class="summary-card">
+          <span class="summary-icon"><img src="./images/icons/trend-up.svg" alt=""></span>
+          <span class="summary-label">อัตราการมาเรียน</span>
+          <strong id="attendance-rate">--%</strong>
+        </article>
+        <article class="summary-card">
+          <span class="summary-icon days"><img src="./images/icons/calendar.svg" alt=""></span>
+          <span class="summary-label">วันที่สรุป</span>
+          <strong id="days-count">-- วัน</strong>
+        </article>
+        <article class="summary-card">
+          <span class="summary-icon trend"><img src="./images/icons/check.svg" alt=""></span>
+          <span class="summary-label">เข้าเรียนทั้งหมด</span>
+          <strong id="present-total">-- คน-วัน</strong>
+        </article>
+      </section>
+
+      <section class="chart-card" aria-labelledby="chart-title">
+        <div class="chart-header">
+          <div>
+            <p class="eyebrow">ATTENDANCE OVERVIEW</p>
+            <h2 id="chart-title">แนวโน้มการเข้าเรียนรายวัน</h2>
+            <p class="chart-description">เลือกข้อมูลที่ต้องการดู แล้ววางเมาส์บนแท่งกราฟเพื่อดูรายละเอียด</p>
+          </div>
+          <div class="chart-tabs" role="group" aria-label="เลือกข้อมูลในกราฟ">
+            <button type="button" class="chart-tab" data-series="present" aria-pressed="true">
+              <span class="legend-dot present-dot"></span>
+              <span>มาเรียน</span>
+              <strong id="present-chart-total">--</strong>
+            </button>
+            <button type="button" class="chart-tab" data-series="absent" aria-pressed="false">
+              <span class="legend-dot absent-dot"></span>
+              <span>ขาดเรียน</span>
+              <strong id="absent-chart-total">--</strong>
+            </button>
+          </div>
+        </div>
+        <div class="chart-wrap">
+          <svg id="attendance-chart" class="attendance-chart" viewBox="0 0 900 330" role="img" aria-label="กราฟสถิติการเข้าเรียนรายวัน"></svg>
+        </div>
+        <p class="data-note">ข้อมูลตัวอย่างสำหรับแสดงรูปแบบกราฟเท่านั้น ไม่ใช่บันทึกการเข้าเรียนจริง</p>
+      </section>
+    </main>
+  </body>
+</html>

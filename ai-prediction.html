@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#eef2ff">
+    <meta name="description" content="ตัวอย่างภาพรวมแนวโน้มการเรียนรู้คณิตศาสตร์">
+    <title>แนวโน้มการเรียนรู้ | โรงเรียนนาคประสิทธิ์</title>
+    <link rel="stylesheet" href="./css/ai-prediction.css">
+    <link rel="stylesheet" href="./css/nav-highlight.css">
+    <link rel="stylesheet" href="./css/blue-pink-theme.css">
+    <link rel="stylesheet" href="./css/dark-mode.css">
+    <script src="./scripts/app-state.js" defer></script>
+    <script src="./scripts/nav-highlight.js" defer></script>
+    <script src="./scripts/theme.js" defer></script>
+    <script src="./scripts/typography.js" defer></script>
+    <script src="./scripts/ai-prediction.js" defer></script>
+    <script src="./scripts/student-profile.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./home_1.html" aria-label="กลับหน้าหลัก">
+        <img src="./images/school-logo.png" alt="">
+        <span>
+          <strong>คณิตศาสตร์</strong>
+          <small>โรงเรียนนาคประสิทธิ์</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="เมนูหลัก">
+        <a href="./learn.html">บทเรียน</a>
+        <a href="./exercises.html">แบบฝึกหัด</a>
+        <a href="./attendance.html">เข้าเรียน</a>
+        <a href="./scores.html">คะแนน</a>
+        <a href="./settings.html">ตั้งค่า</a>
+      </nav>
+
+      <a class="profile" href="./settings.html">
+        <span class="avatar">น</span>
+        <span>โหมดตัวอย่าง</span>
+      </a>
+    </header>
+
+    <section class="page-heading">
+      <div>
+        <p class="eyebrow">MATH LEARNING</p>
+        <h1>แนวโน้มคะแนนการเรียนรู้</h1>
+      </div>
+      <a class="back" href="./home_1.html">← กลับหน้าหลัก</a>
+    </section>
+
+    <main class="content">
+      <section class="banner">
+        <span class="brain" aria-hidden="true"><img src="./images/icons/brain.svg" alt=""></span>
+        <div>
+          <span class="eyebrow">LEARNING INSIGHTS</span>
+          <h2>ประมาณการจากผลแบบฝึกหัด</h2>
+          <p>ใช้คะแนนล่าสุดที่เก็บในอุปกรณ์นี้ ไม่ได้เชื่อมต่อ AI หรือระบบโรงเรียน</p>
+        </div>
+      </section>
+
+      <section class="stats" aria-label="ข้อมูลแนวโน้มการเรียน">
+        <article class="stat">
+          <span class="stat-icon violet">◉</span>
+          <span class="label">คะแนนเฉลี่ย</span>
+          <strong id="prediction-confidence">—</strong>
+        </article>
+
+        <article class="stat">
+          <span class="stat-icon green"><img src="./images/icons/trend-up.svg" alt=""></span>
+          <span class="label">แนวโน้มจากผลล่าสุด</span>
+          <strong id="prediction-trend">—</strong>
+        </article>
+
+        <article class="stat">
+          <span class="stat-icon orange">◎</span>
+          <span class="label">แนะนำให้ฝึก</span>
+          <strong id="prediction-recommendation">—</strong>
+        </article>
+      </section>
+
+      <section class="chart">
+        <div class="chart-heading">
+          <div>
+            <h3>ภาพรวมความก้าวหน้า</h3>
+            <p>แผนภูมิและคำแนะนำจะปรากฏเมื่อมีข้อมูล</p>
+          </div>
+          <span class="pill" id="prediction-label">ยังไม่มีข้อมูล</span>
+        </div>
+
+        <div class="chart-lines">
+          <div class="chart-empty" id="prediction-status">กดปุ่มเพื่อคำนวณแนวโน้มจากคะแนนแบบฝึกหัดของคุณ</div>
+        </div>
+        <button class="button" id="calculate-prediction" type="button">คำนวณแนวโน้ม</button>
+      </section>
+    </main>
+
+  </body>
+</html>

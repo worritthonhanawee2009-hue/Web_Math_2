@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#eef2ff">
+    <meta name="description" content="เข้าสู่ระบบเรียนรู้คณิตศาสตร์ โรงเรียนนาคประสิทธิ์">
+    <title>เข้าสู่ระบบ | โรงเรียนนาคประสิทธิ์</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/blue-pink-theme.css">
+    <link rel="stylesheet" href="./css/dark-mode.css">
+    <script src="./scripts/app-state.js" defer></script>
+    <script src="./scripts/theme.js" defer></script>
+    <script src="./scripts/typography.js" defer></script>
+  </head>
+  <body>
+    <main class="login-card">
+      <header class="brand">
+        <img class="seal" src="./images/school-logo.png" alt="ตราสัญลักษณ์โรงเรียนนาคประสิทธิ์">
+        <div class="welcome">
+          <h1>ยินดีต้อนรับ</h1>
+          <p>กรอกชื่อเพื่อบันทึกโปรไฟล์บนอุปกรณ์นี้ (ไม่ได้ตรวจสอบบัญชีโรงเรียน)</p>
+        </div>
+      </header>
+
+      <form class="fields" action="./home_1.html" method="get">
+        <div class="field">
+          <label for="first-name">ชื่อ</label>
+          <input id="first-name" name="firstName" placeholder="ชื่อ" autocomplete="given-name" pattern=".*\S.*" required>
+        </div>
+        <div class="field">
+          <label for="last-name">นามสกุล</label>
+          <input id="last-name" name="lastName" placeholder="นามสกุล" autocomplete="family-name" pattern=".*\S.*" required>
+        </div>
+        <div class="field">
+          <span class="field-label">ระดับชั้น</span>
+          <div class="grade">
+            <strong>มัธยมศึกษาปีที่ 4 (ม.4)</strong>
+            <span>คณิตศาสตร์พื้นฐาน</span>
+          </div>
+        </div>
+        <div class="field">
+          <label for="classroom">ห้องเรียน</label>
+          <select id="classroom" name="classroom" required>
+            <option value="">เลือกห้องเรียน</option>
+            <option value="1">ห้อง 1 (ม.4/1)</option>
+            <option value="2">ห้อง 2 (ม.4/2)</option>
+            <option value="3">ห้อง 3 (ม.4/3)</option>
+            <option value="4">ห้อง 4 (ม.4/4)</option>
+            <option value="5">ห้อง 5 (ม.4/5)</option>
+            <option value="6">ห้อง 6 (ม.4/6)</option>
+            <option value="7">ห้อง 7 (ม.4/7)</option>
+            <option value="8">ห้อง 8 (ม.4/8)</option>
+          </select>
+        </div>
+        <button class="submit" type="submit">เข้าสู่ระบบ</button>
+      </form>
+    </main>
+    <script src="./scripts/login.js" defer></script>
+  </body>
+</html>

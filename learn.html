@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#eef2ff">
+    <meta name="description" content="บทเรียนคณิตศาสตร์ ม.4 เรื่องเซต สมาชิก เซตย่อย การดำเนินการ และแผนภาพเวนน์">
+    <title>บทเรียนเรื่องเซต | โรงเรียนนาคประสิทธิ์</title>
+    <link rel="stylesheet" href="./css/learn.css">
+    <link rel="stylesheet" href="./css/nav-highlight.css">
+    <link rel="stylesheet" href="./css/blue-pink-theme.css">
+    <link rel="stylesheet" href="./css/dark-mode.css">
+    <script src="./scripts/app-state.js" defer></script>
+    <script src="./scripts/nav-highlight.js" defer></script>
+    <script src="./scripts/theme.js" defer></script>
+    <script src="./scripts/typography.js" defer></script>
+    <script src="./scripts/learning-progress.js" defer></script>
+    <script src="./scripts/student-profile.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./home_1.html" aria-label="กลับหน้าหลัก"><img src="./images/school-logo.png" alt=""><span><strong>คณิตศาสตร์</strong><small>โรงเรียนนาคประสิทธิ์</small></span></a>
+      <nav class="main-nav" aria-label="เมนูหลัก"><a href="./learn.html" aria-current="page">บทเรียน</a><a href="./exercises.html">แบบฝึกหัด</a><a href="./attendance.html">เข้าเรียน</a><a href="./scores.html">คะแนน</a><a href="./settings.html">ตั้งค่า</a></nav>
+      <a class="profile" href="./settings.html"><span class="avatar">น</span><span>โหมดตัวอย่าง</span></a>
+    </header>
+    <section class="page-heading"><div><p class="eyebrow">MATH LEARNING</p><h1>บทเรียนเรื่องเซต</h1><p class="subtitle">เรียนรู้ตั้งแต่ความหมายของเซต ไปจนถึงการดำเนินการและแผนภาพเวนน์</p></div><a class="back" href="./home_1.html">← กลับหน้าหลัก</a></section>
+    <main class="content">
+      <article class="lesson">
+        <div class="lesson-heading"><span class="lesson-number">01</span><div><span class="lesson-kicker">คณิตศาสตร์ ม.4</span><h2>ความหมายของเซตและสมาชิก</h2></div></div>
+        <p>เซต คือ กลุ่มของสิ่งต่าง ๆ ที่ระบุได้อย่างชัดเจนว่าสิ่งใดเป็นสมาชิก เขียนสมาชิกภายในวงเล็บปีกกา <strong>{ }</strong> และใช้ตัวอักษรภาษาอังกฤษตัวใหญ่แทนชื่อเซต</p>
+        <section class="example"><span class="example-label">การเขียนและอ่านสัญลักษณ์</span><p>ถ้า <strong>A = {1, 2, 3}</strong> แล้ว <strong>2 ∈ A</strong> อ่านว่า 2 เป็นสมาชิกของ A ส่วน <strong>5 ∉ A</strong> อ่านว่า 5 ไม่เป็นสมาชิกของ A</p><p>เซตเดียวกันเขียนสมาชิกซ้ำได้เพียงครั้งเดียว เช่น {1, 1, 2} คือเซตเดียวกับ {1, 2} และลำดับสมาชิกไม่มีผล</p></section>
+
+        <section class="lesson-section">
+          <h2>การเขียนแสดงเซต</h2>
+          <p>เขียนเซตได้ทั้งแบบแจกแจงสมาชิก และแบบบอกเงื่อนไขของสมาชิก อ่านเครื่องหมาย “|” ว่า “โดยที่”</p>
+          <div class="example"><span class="example-label">ตัวอย่างแบบบอกเงื่อนไข</span><p><strong>S = {x ∈ ℤ | x² = 4}</strong> หมายถึงเซตของจำนวนเต็ม x ที่ทำให้ x² เท่ากับ 4 ดังนั้น <strong>S = {−2, 2}</strong></p></div>
+        </section>
+
+        <section class="lesson-section">
+          <h2>เซตจำกัด เซตอนันต์ และเซตพิเศษ</h2>
+          <p>เซตจำกัดมีจำนวนสมาชิกจำกัด เช่น {2, 4, 6} ส่วนเซตอนันต์มีสมาชิกไม่สิ้นสุด เช่น เซตของจำนวนเต็มบวก</p>
+          <ul><li><strong>เซตว่าง</strong> เขียน ∅ หรือ { } เป็นเซตที่ไม่มีสมาชิก และ n(∅) = 0</li><li><strong>เอกภพสัมพัทธ์</strong> เขียน U คือเซตที่กำหนดขอบเขตของสมาชิกทั้งหมดที่กำลังพิจารณา</li><li><strong>จำนวนสมาชิก</strong> ของเซตจำกัด A เขียน n(A)</li></ul>
+          <div class="example"><span class="example-label">ตัวอย่าง</span><p>ถ้า U = {1, 2, 3, 4, 5, 6} และ A = {2, 4, 6} จะได้ n(A) = 3</p></div>
+        </section>
+
+        <section class="lesson-section">
+          <h2>เซตย่อยและเซตเท่ากัน</h2>
+          <p><strong>A ⊆ B</strong> หมายถึง สมาชิกทุกตัวของ A เป็นสมาชิกของ B ด้วย ส่วน <strong>A ⊂ B</strong> ใช้เมื่อ A เป็นเซตย่อยแท้ของ B (และ A ไม่เท่ากับ B) เซตว่างเป็นเซตย่อยของทุกเซต และทุกเซตเป็นเซตย่อยของตัวเอง</p>
+          <p><strong>A = B</strong> เมื่อ A และ B มีสมาชิกเหมือนกันทุกตัว โดยไม่คำนึงถึงลำดับที่เขียน</p>
+          <div class="example"><span class="example-label">ตัวอย่าง</span><p>ให้ A = {1, 2} และ B = {1, 2, 3} จะได้ A ⊆ B แต่ A ≠ B</p></div>
+        </section>
+
+        <section class="lesson-section">
+          <h2>การดำเนินการระหว่างเซต</h2>
+          <ul>
+            <li><strong>ยูเนียน A ∪ B</strong> รวมสมาชิกที่อยู่ใน A หรือ B หรือทั้งสองเซต โดยไม่เขียนซ้ำ</li>
+            <li><strong>อินเตอร์เซกชัน A ∩ B</strong> เลือกสมาชิกที่อยู่ร่วมกันทั้งใน A และ B</li>
+            <li><strong>ผลต่าง A − B</strong> เลือกสมาชิกที่อยู่ใน A แต่ไม่อยู่ใน B โดย A − B = A ∩ B′</li>
+            <li><strong>ส่วนเติมเต็ม A′</strong> เลือกสมาชิกใน U ที่ไม่อยู่ใน A</li>
+          </ul>
+          <div class="example"><span class="example-label">ลองไล่สมาชิก</span><p>ถ้า A = {1, 2, 3} และ B = {3, 4} จะได้ A ∪ B = {1, 2, 3, 4}, A ∩ B = {3} และ A − B = {1, 2}</p></div>
+        </section>
+
+        <section class="lesson-section">
+          <h2>แผนภาพเวนน์และกฎของเซต</h2>
+          <p>ในแผนภาพเวนน์ สี่เหลี่ยมแทน U และวงกลมแทนเซต พื้นที่วงกลมซ้อนกันคือสมาชิกที่อยู่ร่วมกัน การระบายพื้นที่ช่วยแสดงผลของยูเนียน อินเตอร์เซกชัน และส่วนเติมเต็มได้</p>
+          <ul>
+            <li><strong>สลับที่:</strong> A ∪ B = B ∪ A และ A ∩ B = B ∩ A</li>
+            <li><strong>เปลี่ยนหมู่:</strong> (A ∪ B) ∪ C = A ∪ (B ∪ C) และ (A ∩ B) ∩ C = A ∩ (B ∩ C)</li>
+            <li><strong>แจกแจง:</strong> A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C)</li>
+            <li><strong>เดอมอร์แกน:</strong> (A ∪ B)′ = A′ ∩ B′ และ (A ∩ B)′ = A′ ∪ B′</li>
+          </ul>
+          <div class="example"><span class="example-label">จำนวนสมาชิกของยูเนียน</span><p>เมื่อนับสมาชิก A ∪ B ต้องไม่รวมสมาชิกในส่วนซ้ำสองครั้ง ดังนั้น <strong>n(A ∪ B) = n(A) + n(B) − n(A ∩ B)</strong></p><p>เช่น n(A) = 8, n(B) = 6 และ n(A ∩ B) = 2 จะได้ n(A ∪ B) = 8 + 6 − 2 = 12</p></div>
+        </section>
+
+        <section class="lesson-section activity">
+          <h2>กิจกรรมชวนคิด: จัดกลุ่มสิ่งของ</h2>
+          <p>ลองเลือกสิ่งของหรือข้อมูลใกล้ตัว แล้วกำหนดกลุ่ม 2–3 กลุ่ม เช่น “ของที่เป็นสีแดง” และ “ของที่ทำจากพลาสติก” จากนั้นเขียนสมาชิกของแต่ละเซต วาดแผนภาพเวนน์ และอภิปรายว่าสิ่งใดอยู่ในส่วนซ้อนกัน</p>
+          <p>ตรวจคำตอบโดยถามว่า: กำหนดสมาชิกชัดเจนหรือไม่? มีสมาชิกใดอยู่ทั้งสองกลุ่ม? สมาชิกใดอยู่ในกลุ่มแรกแต่ไม่อยู่ในกลุ่มที่สอง?</p>
+        </section>
+        <p class="summary">จำไว้: อ่านสัญลักษณ์ให้ถูกก่อน แล้วพิจารณาว่าสมาชิกอยู่ในเซตใด พื้นที่ส่วนใดในแผนภาพเวนน์ตรงกับโจทย์</p>
+        <button class="button" id="lesson-complete" type="button" aria-pressed="false">ทำเครื่องหมายว่าเรียนจบ</button>
+        <a class="button" href="./exercises.html">ลองทำแบบฝึกหัดเรื่องเซต <span aria-hidden="true">→</span></a>
+      </article>
+      <aside class="note">บทเรียนนี้ครอบคลุมเนื้อหาเรื่องเซตระดับ ม.4 พร้อมตัวอย่างและกิจกรรมทบทวน</aside>
+    </main>
+  </body>
+</html>

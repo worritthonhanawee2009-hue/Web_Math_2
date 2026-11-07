@@ -1,0 +1,61 @@
+body {
+  background:
+    radial-gradient(ellipse at 8% 2%, rgba(119, 190, 255, .22), transparent 34rem),
+    radial-gradient(ellipse at 96% 28%, rgba(255, 166, 207, .2), transparent 32rem),
+    linear-gradient(150deg, #f1f8ff 0%, #f7f5ff 54%, #fff4f8 100%);
+}
+
+.question-feedback {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border: 1px solid;
+  border-radius: 11px;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.question-feedback p {
+  margin: 4px 0 0;
+}
+
+.question-feedback.is-correct,
+.choice.is-correct {
+  border-color: #9bd5bc;
+  background: #effaf4;
+}
+
+.question-feedback.is-correct {
+  color: #24724f;
+}
+
+.question-feedback.is-incorrect,
+.choice.is-incorrect {
+  border-color: #f0b3bc;
+  background: #fff2f3;
+}
+
+.question-feedback.is-incorrect {
+  color: #a42e40;
+}
+
+.choice.is-correct {
+  color: #24724f;
+}
+
+.choice.is-incorrect {
+  color: #a42e40;
+}
+
+.dashboard .logout a span {
+  color: #8b1e2d;
+}
+
+.button,
+.quiz-submit,
+.submit,
+.topic-button,
+.tool-action,
+.logout a,
+.logout-button {
+  box-shadow: 0 7px 16px rgba(67, 115, 179, .2), 0 3px 8px rgba(199, 87, 139, .12);
+}

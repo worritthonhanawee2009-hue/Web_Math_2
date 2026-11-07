@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#eef2ff">
+    <meta name="description" content="สรุปคะแนนและความก้าวหน้าในการเรียน">
+    <title>สรุปคะแนน | โรงเรียนนาคประสิทธิ์</title>
+    <link rel="stylesheet" href="./css/scores.css">
+    <link rel="stylesheet" href="./css/nav-highlight.css">
+    <link rel="stylesheet" href="./css/blue-pink-theme.css">
+    <link rel="stylesheet" href="./css/dark-mode.css">
+    <script src="./scripts/app-state.js" defer></script>
+    <script src="./scripts/nav-highlight.js" defer></script>
+    <script src="./scripts/theme.js" defer></script>
+    <script src="./scripts/typography.js" defer></script>
+    <script src="./scripts/scores.js" defer></script>
+    <script src="./scripts/student-profile.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header"><a class="brand" href="./home_1.html" aria-label="กลับหน้าหลัก"><img src="./images/school-logo.png" alt=""><span><strong>คณิตศาสตร์</strong><small>โรงเรียนนาคประสิทธิ์</small></span></a><nav class="main-nav" aria-label="เมนูหลัก"><a href="./learn.html">บทเรียน</a><a href="./exercises.html">แบบฝึกหัด</a><a href="./attendance.html">เข้าเรียน</a><a href="./scores.html" aria-current="page">คะแนน</a><a href="./settings.html">ตั้งค่า</a></nav><a class="profile" href="./settings.html"><span class="avatar">น</span><span>โหมดตัวอย่าง</span></a></header>
+    <section class="page-heading"><div><p class="eyebrow">MATH LEARNING</p><h1>สรุปคะแนน</h1></div><a class="back" href="./home_1.html">← กลับหน้าหลัก</a></section>
+    <main class="content">
+      <section class="panel hero"><span class="trophy" aria-hidden="true"><img src="./images/icons/trophy-gold.svg" alt=""></span><div><span class="eyebrow">YOUR PROGRESS</span><h2>ทุกการฝึกฝนคือความก้าวหน้า</h2><p>คะแนนล่าสุดของแต่ละชุดบันทึกไว้ในอุปกรณ์นี้</p></div></section>
+      <section class="stats" aria-label="สถิติการเรียน"><article class="stat"><span class="stat-icon violet"><img src="./images/icons/star.svg" alt=""></span><span class="label">คะแนนสะสมล่าสุด</span><strong id="total-score">—</strong></article><article class="stat"><span class="stat-icon green"><img src="./images/icons/check.svg" alt=""></span><span class="label">แบบฝึกหัดที่ทำแล้ว</span><strong id="completed-quizzes">0</strong></article><article class="stat"><span class="stat-icon orange"><img src="./images/icons/book.svg" alt=""></span><span class="label">บทเรียนที่เรียนจบ</span><strong id="completed-lessons">0</strong></article></section>
+      <section class="panel empty" id="empty-state"><span class="empty-icon" aria-hidden="true"><img src="./images/icons/document.svg" alt=""></span><h3>ยังไม่มีข้อมูลคะแนน</h3><p>ทำแบบฝึกหัดเพื่อดูคะแนนและความก้าวหน้าของคุณ</p><a class="button" href="./exercises.html">ไปที่แบบฝึกหัด <span aria-hidden="true">→</span></a></section>
+      <section class="panel score-history" id="score-history" hidden><h2>ผลแบบฝึกหัดล่าสุด</h2><ul id="score-history-list"></ul><a class="button" href="./exercises.html">ทำแบบฝึกหัดเพิ่มเติม <span aria-hidden="true">→</span></a></section>
+    </main>
+  </body>
+</html>

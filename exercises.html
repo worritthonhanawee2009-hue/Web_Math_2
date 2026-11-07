@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#eef2ff">
+    <meta name="description" content="แบบฝึกหัดพื้นฐานเรื่องเซต">
+    <title>แบบฝึกหัดเรื่องเซต | โรงเรียนนาคประสิทธิ์</title>
+    <link rel="stylesheet" href="./css/exercises.css">
+    <link rel="stylesheet" href="./css/nav-highlight.css">
+    <link rel="stylesheet" href="./css/blue-pink-theme.css">
+    <link rel="stylesheet" href="./css/dark-mode.css">
+    <script src="./scripts/app-state.js" defer></script>
+    <script src="./scripts/nav-highlight.js" defer></script>
+    <script src="./scripts/theme.js" defer></script>
+    <script src="./scripts/quiz.js" defer></script>
+    <script src="./scripts/typography.js" defer></script>
+    <script src="./scripts/student-profile.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./home_1.html" aria-label="กลับหน้าหลัก">
+        <img src="./images/school-logo.png" alt="">
+        <span><strong>คณิตศาสตร์</strong><small>โรงเรียนนาคประสิทธิ์</small></span>
+      </a>
+      <nav class="main-nav" aria-label="เมนูหลัก">
+        <a href="./learn.html">บทเรียน</a>
+        <a href="./exercises.html" aria-current="page">แบบฝึกหัด</a>
+        <a href="./attendance.html">เข้าเรียน</a>
+        <a href="./scores.html">คะแนน</a>
+        <a href="./settings.html">ตั้งค่า</a>
+      </nav>
+      <a class="profile" href="./settings.html"><span class="avatar">น</span><span>โหมดตัวอย่าง</span></a>
+    </header>
+
+    <section class="page-heading">
+      <div>
+        <p class="eyebrow">MATH LEARNING</p>
+        <h1>แบบฝึกหัดเรื่องเซต</h1>
+        <p class="subtitle">ตอบคำถามให้ครบทุกข้อก่อนเปิดดูเฉลย</p>
+      </div>
+      <a class="back" href="./home_1.html">← กลับหน้าหลัก</a>
+    </section>
+
+    <main class="content">
+      <div class="toolbar">
+        <div class="pills"><span class="pill">แบบฝึกหัด 12 ข้อ</span><span class="pill muted">บันทึกคะแนนในอุปกรณ์นี้</span></div>
+        <nav class="levels" aria-label="ระดับแบบฝึกหัด">
+          <a href="./exercises.html" aria-current="page">พื้นฐาน</a>
+          <a href="./exercises-intermediate.html">ปานกลาง</a>
+          <a href="./exercises-advanced.html">ขั้นสูง</a>
+        </nav>
+      </div>
+
+      <form class="questions" data-quiz-id="basic">
+        <fieldset class="question" data-answer="0" aria-labelledby="question-1">
+          <div class="question-heading" id="question-1"><span class="number">01</span><span>เขียนเซตของจำนวนเต็มบวกไม่เกิน 5</span></div>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="q1"><span class="letter">A</span><span>{1, 2, 3, 4, 5}</span></label>
+            <label class="choice"><input type="radio" name="q1"><span class="letter">B</span><span>{0, 1, 2, 3, 4, 5}</span></label>
+            <label class="choice"><input type="radio" name="q1"><span class="letter">C</span><span>{1, 2, 3, 4}</span></label>
+            <label class="choice"><input type="radio" name="q1"><span class="letter">D</span><span>{2, 3, 4, 5, 6}</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="question" data-answer="1" aria-labelledby="question-2">
+          <div class="question-heading" id="question-2"><span class="number">02</span><span>ถ้า A = {2, 4, 6}, 3 ∈ A หรือไม่?</span></div>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="q2"><span class="letter">A</span><span>ใช่ เพราะ 3 เป็นจำนวนคู่</span></label>
+            <label class="choice"><input type="radio" name="q2"><span class="letter">B</span><span>ไม่ใช่ เพราะ 3 ไม่ได้อยู่ในเซต A</span></label>
+            <label class="choice"><input type="radio" name="q2"><span class="letter">C</span><span>ใช่ เพราะ 3 &lt; 6</span></label>
+            <label class="choice"><input type="radio" name="q2"><span class="letter">D</span><span>ไม่ใช่ เพราะ 3 เป็นจำนวนคี่</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="question" data-answer="0" aria-labelledby="question-3">
+          <div class="question-heading" id="question-3"><span class="number">03</span><span>เซตว่าง (∅) มีจำนวนสมาชิกเท่าไร?</span></div>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="q3"><span class="letter">A</span><span>0</span></label>
+            <label class="choice"><input type="radio" name="q3"><span class="letter">B</span><span>1</span></label>
+            <label class="choice"><input type="radio" name="q3"><span class="letter">C</span><span>ไม่สามารถนับได้</span></label>
+            <label class="choice"><input type="radio" name="q3"><span class="letter">D</span><span>ไม่มีที่สิ้นสุด</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="question" data-answer="0" aria-labelledby="question-4">
+          <div class="question-heading" id="question-4"><span class="number">04</span><span>ให้ A = {1, 2, 3}, B = {3, 4, 5} จงหา A ∪ B</span></div>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="q4"><span class="letter">A</span><span>{1, 2, 3, 4, 5}</span></label>
+            <label class="choice"><input type="radio" name="q4"><span class="letter">B</span><span>{3}</span></label>
+            <label class="choice"><input type="radio" name="q4"><span class="letter">C</span><span>{1, 2, 4, 5}</span></label>
+            <label class="choice"><input type="radio" name="q4"><span class="letter">D</span><span>{1, 2, 3, 3, 4, 5}</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="question" data-answer="1" aria-labelledby="question-5">
+          <div class="question-heading" id="question-5"><span class="number">05</span><span>ให้ A = {1, 2, 3}, B = {3, 4, 5} จงหา A ∩ B</span></div>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="q5"><span class="letter">A</span><span>{1, 2, 3, 4, 5}</span></label>
+            <label class="choice"><input type="radio" name="q5"><span class="letter">B</span><span>{3}</span></label>
+            <label class="choice"><input type="radio" name="q5"><span class="letter">C</span><span>{1, 2}</span></label>
+            <label class="choice"><input type="radio" name="q5"><span class="letter">D</span><span>{4, 5}</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="question" data-answer="2" aria-labelledby="question-6">
+          <div class="question-heading" id="question-6"><span class="number">06</span><span>ถ้า A = {a, e, i, o, u} ข้อใดเขียนได้ถูกต้อง?</span></div>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="q6"><span class="letter">A</span><span>a ∉ A</span></label>
+            <label class="choice"><input type="radio" name="q6"><span class="letter">B</span><span>b ∈ A</span></label>
+            <label class="choice"><input type="radio" name="q6"><span class="letter">C</span><span>e ∈ A</span></label>
+            <label class="choice"><input type="radio" name="q6"><span class="letter">D</span><span>{a} ∈ A</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="question" data-answer="1" aria-labelledby="question-7">
+          <div class="question-heading" id="question-7"><span class="number">07</span><span>ข้อใดเป็นตัวอย่างของเซตอนันต์?</span></div>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="q7"><span class="letter">A</span><span>{1, 2, 3, 4}</span></label>
+            <label class="choice"><input type="radio" name="q7"><span class="letter">B</span><span>เซตของจำนวนเต็มบวก</span></label>
+            <label class="choice"><input type="radio" name="q7"><span class="letter">C</span><span>เซตของวันในหนึ่งสัปดาห์</span></label>
+            <label class="choice"><input type="radio" name="q7"><span class="letter">D</span><span>เซตของพยัญชนะไทย</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="question" data-answer="0" aria-labelledby="question-8">
+          <div class="question-heading" id="question-8"><span class="number">08</span><span>ถ้า A = {1, 2} และ B = {1, 2, 3} ข้อใดเป็นจริง?</span></div>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="q8"><span class="letter">A</span><span>A ⊆ B</span></label>
+            <label class="choice"><input type="radio" name="q8"><span class="letter">B</span><span>B ⊆ A</span></label>
+            <label class="choice"><input type="radio" name="q8"><span class="letter">C</span><span>A = B</span></label>
+            <label class="choice"><input type="radio" name="q8"><span class="letter">D</span><span>A ∩ B = ∅</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="question" data-answer="1" aria-labelledby="question-9">
+          <div class="question-heading" id="question-9"><span class="number">09</span><span>เซต {x ∈ ℤ | x² = 4} เขียนแบบแจกแจงสมาชิกได้อย่างไร?</span></div>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="q9"><span class="letter">A</span><span>{2}</span></label>
+            <label class="choice"><input type="radio" name="q9"><span class="letter">B</span><span>{−2, 2}</span></label>
+            <label class="choice"><input type="radio" name="q9"><span class="letter">C</span><span>{−4, 4}</span></label>
+            <label class="choice"><input type="radio" name="q9"><span class="letter">D</span><span>{−2, −1, 1, 2}</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="question" data-answer="1" aria-labelledby="question-10">
+          <div class="question-heading" id="question-10"><span class="number">10</span><span>บริเวณสีเข้มในแผนภาพเวนน์แทนเซตใด?</span></div>
+          <div class="question-diagram">
+            <svg viewBox="0 0 300 150" role="img" aria-labelledby="basic-diagram-title basic-diagram-description">
+              <title id="basic-diagram-title">แผนภาพเวนน์ของเซต A และ B</title>
+              <desc id="basic-diagram-description">วงกลม A และ B ซ้อนกัน โดยระบายสีเข้มเฉพาะบริเวณที่วงกลมทั้งสองทับซ้อนกัน</desc>
+              <defs><clipPath id="basic-b-clip"><circle cx="185" cy="76" r="44"></circle></clipPath></defs>
+              <rect x="8" y="8" width="284" height="134" rx="3" fill="#fff" stroke="#8c88a5" stroke-width="2"></rect>
+              <circle cx="115" cy="76" r="44" fill="#dfe9ff"></circle>
+              <circle cx="185" cy="76" r="44" fill="#ffe9f1"></circle>
+              <circle cx="115" cy="76" r="44" fill="#a990e8" clip-path="url(#basic-b-clip)"></circle>
+              <circle cx="115" cy="76" r="44" fill="none" stroke="#615a79" stroke-width="2"></circle>
+              <circle cx="185" cy="76" r="44" fill="none" stroke="#615a79" stroke-width="2"></circle>
+              <text x="115" y="24" text-anchor="middle" fill="#393451" font-size="15" font-weight="700">A</text>
+              <text x="185" y="24" text-anchor="middle" fill="#393451" font-size="15" font-weight="700">B</text>
+              <text x="270" y="27" fill="#393451" font-size="14" font-style="italic">U</text>
+            </svg>
+          </div>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="q10"><span class="letter">A</span><span>A ∪ B</span></label>
+            <label class="choice"><input type="radio" name="q10"><span class="letter">B</span><span>A ∩ B</span></label>
+            <label class="choice"><input type="radio" name="q10"><span class="letter">C</span><span>A − B</span></label>
+            <label class="choice"><input type="radio" name="q10"><span class="letter">D</span><span>A′</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="question" data-answer="0" aria-labelledby="question-11">
+          <div class="question-heading" id="question-11"><span class="number">11</span><span>จากแผนภาพเวนน์ พื้นที่สีม่วงแทนเซตใด?</span></div>
+          <div class="question-diagram">
+            <svg viewBox="0 0 300 150" role="img" aria-labelledby="basic-union-title basic-union-description">
+              <title id="basic-union-title">แผนภาพเวนน์แสดงพื้นที่สีม่วงในเซต A และ B</title>
+              <desc id="basic-union-description">พื้นที่ในวงกลม A และ B รวมถึงส่วนซ้อนทับเป็นสีม่วงทั้งหมด ส่วนภายนอกวงกลมเป็นสีขาว</desc>
+              <rect x="8" y="8" width="284" height="134" rx="3" fill="#fff" stroke="#8c88a5" stroke-width="2"></rect>
+              <circle cx="115" cy="76" r="44" fill="#a990e8"></circle>
+              <circle cx="185" cy="76" r="44" fill="#a990e8"></circle>
+              <circle cx="115" cy="76" r="44" fill="none" stroke="#615a79" stroke-width="2"></circle>
+              <circle cx="185" cy="76" r="44" fill="none" stroke="#615a79" stroke-width="2"></circle>
+              <text x="115" y="24" text-anchor="middle" fill="#393451" font-size="15" font-weight="700">A</text>
+              <text x="185" y="24" text-anchor="middle" fill="#393451" font-size="15" font-weight="700">B</text>
+              <text x="270" y="27" fill="#393451" font-size="14" font-style="italic">U</text>
+            </svg>
+          </div>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="q11"><span class="letter">A</span><span>A ∪ B</span></label>
+            <label class="choice"><input type="radio" name="q11"><span class="letter">B</span><span>A ∩ B</span></label>
+            <label class="choice"><input type="radio" name="q11"><span class="letter">C</span><span>A − B</span></label>
+            <label class="choice"><input type="radio" name="q11"><span class="letter">D</span><span>B − A</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="question" data-answer="2" aria-labelledby="question-12">
+          <div class="question-heading" id="question-12"><span class="number">12</span><span>จากแผนภาพเวนน์ พื้นที่ระบายสีแทนเซตใด?</span></div>
+          <div class="question-diagram">
+            <svg viewBox="0 0 300 150" role="img" aria-labelledby="basic-difference-title basic-difference-description">
+              <title id="basic-difference-title">แผนภาพเวนน์แสดงผลต่าง B ลบ A</title>
+              <desc id="basic-difference-description">ระบายสีเฉพาะส่วนของวงกลม B ที่อยู่นอกวงกลม A</desc>
+              <rect x="8" y="8" width="284" height="134" rx="3" fill="#fff" stroke="#8c88a5" stroke-width="2"></rect>
+              <circle cx="185" cy="76" r="44" fill="#f3a5c7"></circle>
+              <circle cx="115" cy="76" r="44" fill="#fff"></circle>
+              <circle cx="115" cy="76" r="44" fill="none" stroke="#615a79" stroke-width="2"></circle>
+              <circle cx="185" cy="76" r="44" fill="none" stroke="#615a79" stroke-width="2"></circle>
+              <text x="115" y="24" text-anchor="middle" fill="#393451" font-size="15" font-weight="700">A</text>
+              <text x="185" y="24" text-anchor="middle" fill="#393451" font-size="15" font-weight="700">B</text>
+              <text x="270" y="27" fill="#393451" font-size="14" font-style="italic">U</text>
+            </svg>
+          </div>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="q12"><span class="letter">A</span><span>A ∩ B</span></label>
+            <label class="choice"><input type="radio" name="q12"><span class="letter">B</span><span>A − B</span></label>
+            <label class="choice"><input type="radio" name="q12"><span class="letter">C</span><span>B − A</span></label>
+            <label class="choice"><input type="radio" name="q12"><span class="letter">D</span><span>A′</span></label>
+          </div>
+        </fieldset>
+        <button class="quiz-submit" type="submit">ตรวจคำตอบและดูเฉลย</button>
+      </form>
+
+      <details class="answer-key" hidden>
+        <summary>เฉลยและทบทวนคำตอบ</summary>
+        <p class="quiz-result" aria-live="polite"></p>
+        <ol>
+          <li><strong>A</strong> — จำนวนเต็มบวกที่ไม่เกิน 5 คือ 1 ถึง 5</li>
+          <li><strong>B</strong> — 3 ไม่อยู่ในสมาชิกของ A จึงเขียนว่า 3 ∉ A</li>
+          <li><strong>A</strong> — เซตว่างไม่มีสมาชิก จึงมีจำนวนสมาชิกเท่ากับ 0</li>
+          <li><strong>A</strong> — ยูเนียนรวมสมาชิกของทั้งสองเซตโดยไม่เขียนสมาชิกซ้ำ</li>
+          <li><strong>B</strong> — อินเตอร์เซกชันคือสมาชิกที่อยู่ร่วมกัน ทั้งสองเซตมี 3</li>
+          <li><strong>C</strong> — e เป็นสมาชิกที่ระบุอยู่ในเซต A จึงเขียน e ∈ A</li>
+          <li><strong>B</strong> — จำนวนเต็มบวกมีสมาชิกต่อไปได้ไม่สิ้นสุด จึงเป็นเซตอนันต์</li>
+          <li><strong>A</strong> — สมาชิกทุกตัวของ A อยู่ใน B จึงได้ A ⊆ B แต่ทั้งสองเซตไม่เท่ากัน</li>
+          <li><strong>B</strong> — จำนวนเต็มที่ยกกำลังสองแล้วได้ 4 คือ −2 และ 2</li>
+          <li><strong>B</strong> — สีเข้มอยู่ในบริเวณร่วมของ A และ B จึงแทน A ∩ B</li>
+          <li><strong>A</strong> — พื้นที่ระบายสีครอบคลุมทั้ง A และ B จึงแทน A ∪ B</li>
+          <li><strong>C</strong> — พื้นที่ระบายสีอยู่ใน B แต่ไม่อยู่ใน A จึงแทน B − A</li>
+        </ol>
+      </details>
+    </main>
+
+  </body>
+</html>

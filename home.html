@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#eef2ff">
+    <meta name="description" content="ระบบเรียนรู้คณิตศาสตร์ โรงเรียนนาคประสิทธิ์">
+    <title>ระบบเรียนรู้คณิตศาสตร์ | โรงเรียนนาคประสิทธิ์</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/blue-pink-theme.css">
+    <link rel="stylesheet" href="./css/dark-mode.css">
+    <script src="./scripts/app-state.js" defer></script>
+    <script src="./scripts/theme.js" defer></script>
+    <script src="./scripts/typography.js" defer></script>
+  </head>
+  <body>
+    <main class="dashboard">
+      <header class="hero">
+        <img class="school-logo" src="./images/school-logo.png" alt="ตราสัญลักษณ์โรงเรียนนาคประสิทธิ์">
+        <h1>โรงเรียนนาคประสิทธิ์</h1>
+        <p class="subtitle">ระบบเรียนรู้คณิตศาสตร์</p>
+
+        <div class="student-summary" aria-label="ข้อมูลผู้เรียน">
+          <span class="student-icon" aria-hidden="true"><img src="./images/icons/user.svg" alt=""></span>
+          <div><small>ยินดีต้อนรับ</small><strong id="student-name">ผู้เรียนตัวอย่าง</strong></div>
+          <span class="student-icon grade-icon" aria-hidden="true"><img src="./images/icons/graduation.svg" alt=""></span>
+          <div><small>ชั้นเรียน</small><strong class="grade-text">ม.4</strong></div>
+          <span class="student-icon room-icon" aria-hidden="true"><img src="./images/icons/school.svg" alt=""></span>
+          <div><small>ห้องเรียน</small><strong class="room-text" id="student-room">ม.4/1</strong></div>
+        </div>
+
+        <div class="score-card">
+          <span class="score-icon" aria-hidden="true"><img src="./images/icons/trophy.svg" alt=""></span>
+          <div><small>คะแนนรวมจากแบบฝึกหัด</small><strong>ยังไม่มีคะแนน</strong></div>
+          <img class="score-sparkle" src="./images/icons/sparkle.svg" alt="">
+        </div>
+      </header>
+
+      <section class="content" aria-labelledby="topics-heading">
+        <div class="section-heading">
+          <h2 id="topics-heading">เนื้อหาคณิตศาสตร์ ม.4</h2>
+          <p>คณิตศาสตร์พื้นฐาน มัธยมศึกษาปีที่ 4</p>
+        </div>
+
+        <div class="topic-grid">
+          <article class="topic-card">
+            <div class="topic-status">
+              <span class="topic-icon" aria-hidden="true"><img src="./images/icons/book.svg" alt=""></span>
+            </div>
+            <h3>เซต (Sets)</h3>
+            <p>เรียนรู้สมาชิก เซตย่อย การดำเนินการ กฎของเซต และแผนภาพเวนน์</p>
+            <a class="topic-button" href="./learn.html">เริ่มเรียน <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+
+        <nav class="tools" aria-label="เครื่องมือการเรียน">
+          <a class="tool-card ai-tool" href="./ai-prediction.html">
+            <span class="tool-icon" aria-hidden="true"><img src="./images/icons/brain.svg" alt=""></span>
+            <h2>แนวโน้มคะแนน</h2>
+            <p>ประเมินจากคะแนนแบบฝึกหัดล่าสุด</p>
+            <span class="tool-action">ดูแนวโน้ม</span>
+          </a>
+          <a class="tool-card scores-tool" href="./scores.html">
+            <span class="tool-icon" aria-hidden="true"><img src="./images/icons/trophy.svg" alt=""></span>
+            <h2>รวมคะแนน</h2>
+            <p>ดูผลคะแนนและความก้าวหน้า</p>
+            <span class="tool-action">ดูคะแนน</span>
+          </a>
+          <a class="tool-card attendance-tool" href="./attendance.html">
+            <span class="tool-icon" aria-hidden="true"><img src="./images/icons/trend-up.svg" alt=""></span>
+            <h2>การเข้าเรียน</h2>
+            <p>ดูสถิติการมาเรียนและขาดเรียน</p>
+            <span class="tool-action">ดูการเข้าเรียน</span>
+          </a>
+          <a class="tool-card settings-tool" href="./settings.html">
+            <span class="tool-icon" aria-hidden="true"><img src="./images/icons/settings.svg" alt=""></span>
+            <h2>ตั้งค่า</h2>
+            <p>ตั้งค่า</p>
+            <span class="tool-action">ตั้งค่า</span>
+          </a>
+        </nav>
+
+      </section>
+    </main>
+    <script src="./scripts/student-profile.js" defer></script>
+  </body>
+</html>

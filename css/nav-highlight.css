@@ -1,0 +1,42 @@
+.main-nav {
+  position: relative;
+  isolation: isolate;
+}
+
+.main-nav .nav-highlight {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-radius: 9px;
+  background: #f1edff;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    transform .22s cubic-bezier(.2, .8, .2, 1),
+    width .22s cubic-bezier(.2, .8, .2, 1),
+    height .22s cubic-bezier(.2, .8, .2, 1),
+    opacity .15s ease;
+}
+
+.main-nav a:hover,
+.main-nav a[aria-current="page"] {
+  background: transparent;
+}
+
+.main-nav a[data-highlighted="true"] {
+  color: #6048ce;
+}
+
+.main-nav a:focus-visible {
+  outline: 3px solid #8178e8;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .main-nav .nav-highlight {
+    transition-duration: .01ms;
+  }
+}

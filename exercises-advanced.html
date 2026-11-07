@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#eef2ff">
+    <meta name="description" content="แบบฝึกหัดเรื่องเซตระดับสูง">
+    <title>แบบฝึกหัดระดับสูง | โรงเรียนนาคประสิทธิ์</title>
+    <link rel="stylesheet" href="./css/exercises-advanced.css">
+    <link rel="stylesheet" href="./css/nav-highlight.css">
+    <link rel="stylesheet" href="./css/blue-pink-theme.css">
+    <link rel="stylesheet" href="./css/dark-mode.css">
+    <script src="./scripts/app-state.js" defer></script>
+    <script src="./scripts/nav-highlight.js" defer></script>
+    <script src="./scripts/theme.js" defer></script>
+    <script src="./scripts/quiz.js" defer></script>
+    <script src="./scripts/typography.js" defer></script>
+    <script src="./scripts/student-profile.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./home_1.html" aria-label="กลับหน้าหลัก">
+        <img src="./images/school-logo.png" alt="">
+        <span><strong>คณิตศาสตร์</strong><small>โรงเรียนนาคประสิทธิ์</small></span>
+      </a>
+      <nav class="main-nav" aria-label="เมนูหลัก">
+        <a href="./learn.html">บทเรียน</a>
+        <a href="./exercises.html" aria-current="page">แบบฝึกหัด</a>
+        <a href="./attendance.html">เข้าเรียน</a>
+        <a href="./scores.html">คะแนน</a>
+        <a href="./settings.html">ตั้งค่า</a>
+      </nav>
+      <a class="profile" href="./settings.html"><span class="avatar">น</span><span>โหมดตัวอย่าง</span></a>
+    </header>
+
+    <section class="page-heading">
+      <div>
+        <p class="eyebrow">MATH LEARNING</p>
+        <h1>แบบฝึกหัดระดับสูง</h1>
+        <p class="subtitle">ประยุกต์กฎของเซต แผนภาพเวนน์ และการนับสมาชิกหลายเซต</p>
+      </div>
+      <a class="back" href="./home_1.html">← กลับหน้าหลัก</a>
+    </section>
+
+    <main class="content">
+      <div class="toolbar">
+        <div class="pills"><span class="pill">แบบฝึกหัด 10 ข้อ</span><span class="pill muted">บันทึกคะแนนในอุปกรณ์นี้</span></div>
+        <nav class="levels" aria-label="ระดับแบบฝึกหัด">
+          <a href="./exercises.html">พื้นฐาน</a>
+          <a href="./exercises-intermediate.html">ปานกลาง</a>
+          <a href="./exercises-advanced.html" aria-current="page">ขั้นสูง</a>
+        </nav>
+      </div>
+
+      <form class="questions" data-quiz-id="advanced">
+        <fieldset class="question" data-answer="0" aria-labelledby="question-1">
+          <div class="question-heading" id="question-1"><span class="number">01</span><span>กำหนด n(A) = 20, n(B) = 15 และ n(A ∩ B) = 8 จงหา n(A ∪ B)</span></div>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="q1"><span class="letter">A</span><span>27</span></label>
+            <label class="choice"><input type="radio" name="q1"><span class="letter">B</span><span>35</span></label>
+            <label class="choice"><input type="radio" name="q1"><span class="letter">C</span><span>43</span></label>
+            <label class="choice"><input type="radio" name="q1"><span class="letter">D</span><span>12</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="question" data-answer="1" aria-labelledby="question-2">
+          <div class="question-heading" id="question-2"><span class="number">02</span><span>ถ้า A ⊆ B และ B ⊆ A ข้อใดเป็นจริง?</span></div>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="q2"><span class="letter">A</span><span>A ∩ B = ∅</span></label>
+            <label class="choice"><input type="radio" name="q2"><span class="letter">B</span><span>A = B</span></label>
+            <label class="choice"><input type="radio" name="q2"><span class="letter">C</span><span>A ∪ B = ∅</span></label>
+            <label class="choice"><input type="radio" name="q2"><span class="letter">D</span><span>A ≠ B</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="question" data-answer="0" aria-labelledby="question-3">
+          <div class="question-heading" id="question-3"><span class="number">03</span><span>ในห้องมีนักเรียน 30 คน ชอบคณิต 18 คน ชอบวิทย์ 16 คน และชอบทั้งสองวิชา 8 คน ชอบอย่างน้อยหนึ่งวิชากี่คน?</span></div>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="q3"><span class="letter">A</span><span>26</span></label>
+            <label class="choice"><input type="radio" name="q3"><span class="letter">B</span><span>34</span></label>
+            <label class="choice"><input type="radio" name="q3"><span class="letter">C</span><span>42</span></label>
+            <label class="choice"><input type="radio" name="q3"><span class="letter">D</span><span>10</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="question" data-answer="1" aria-labelledby="question-4">
+          <div class="question-heading" id="question-4"><span class="number">04</span><span>ถ้าเอกภพสัมพัทธ์ U = {1,2,3,4,5,6} และ A = {2,4,6} แล้ว A′ คือข้อใด?</span></div>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="q4"><span class="letter">A</span><span>{2,4,6}</span></label>
+            <label class="choice"><input type="radio" name="q4"><span class="letter">B</span><span>{1,3,5}</span></label>
+            <label class="choice"><input type="radio" name="q4"><span class="letter">C</span><span>{1,2,3}</span></label>
+            <label class="choice"><input type="radio" name="q4"><span class="letter">D</span><span>∅</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="question" data-answer="2" aria-labelledby="question-5">
+          <div class="question-heading" id="question-5"><span class="number">05</span><span>ตามกฎการแจกแจง A ∩ (B ∪ C) เท่ากับข้อใด?</span></div>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="q5"><span class="letter">A</span><span>(A ∪ B) ∩ C</span></label>
+            <label class="choice"><input type="radio" name="q5"><span class="letter">B</span><span>(A ∩ B) ∩ (A ∩ C)</span></label>
+            <label class="choice"><input type="radio" name="q5"><span class="letter">C</span><span>(A ∩ B) ∪ (A ∩ C)</span></label>
+            <label class="choice"><input type="radio" name="q5"><span class="letter">D</span><span>(A ∪ B) ∪ (A ∪ C)</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="question" data-answer="0" aria-labelledby="question-6">
+          <div class="question-heading" id="question-6"><span class="number">06</span><span>ข้อใดเป็นกฎของเดอมอร์แกนที่ถูกต้อง?</span></div>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="q6"><span class="letter">A</span><span>(A ∪ B)′ = A′ ∩ B′</span></label>
+            <label class="choice"><input type="radio" name="q6"><span class="letter">B</span><span>(A ∪ B)′ = A′ ∪ B′</span></label>
+            <label class="choice"><input type="radio" name="q6"><span class="letter">C</span><span>(A ∩ B)′ = A′ ∩ B′</span></label>
+            <label class="choice"><input type="radio" name="q6"><span class="letter">D</span><span>(A ∩ B)′ = A ∩ B</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="question" data-answer="2" aria-labelledby="question-7">
+          <div class="question-heading" id="question-7"><span class="number">07</span><span>กำหนด n(A)=20, n(B)=18, n(C)=15, n(A∩B)=6, n(A∩C)=5, n(B∩C)=4 และ n(A∩B∩C)=2 จงหา n(A∪B∪C)</span></div>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="q7"><span class="letter">A</span><span>36</span></label>
+            <label class="choice"><input type="radio" name="q7"><span class="letter">B</span><span>38</span></label>
+            <label class="choice"><input type="radio" name="q7"><span class="letter">C</span><span>40</span></label>
+            <label class="choice"><input type="radio" name="q7"><span class="letter">D</span><span>53</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="question" data-answer="0" aria-labelledby="question-8">
+          <div class="question-heading" id="question-8"><span class="number">08</span><span>บริเวณที่ระบายสีในแผนภาพแทนเซตใด?</span></div>
+          <div class="question-diagram">
+            <svg viewBox="0 0 300 150" role="img" aria-labelledby="advanced-diagram-title advanced-diagram-description">
+              <title id="advanced-diagram-title">แผนภาพเวนน์แสดงส่วนเติมเต็มของยูเนียน</title>
+              <desc id="advanced-diagram-description">พื้นที่นอกวงกลม A และ B แต่ยังอยู่ในเอกภพสัมพัทธ์ U ระบายสีม่วง ส่วนวงกลมทั้งสองไม่ระบายสี</desc>
+              <rect x="8" y="8" width="284" height="134" rx="3" fill="#d9d4f6" stroke="#8c88a5" stroke-width="2"></rect>
+              <circle cx="115" cy="76" r="44" fill="#fff"></circle>
+              <circle cx="185" cy="76" r="44" fill="#fff"></circle>
+              <circle cx="115" cy="76" r="44" fill="none" stroke="#615a79" stroke-width="2"></circle>
+              <circle cx="185" cy="76" r="44" fill="none" stroke="#615a79" stroke-width="2"></circle>
+              <text x="115" y="24" text-anchor="middle" fill="#393451" font-size="15" font-weight="700">A</text>
+              <text x="185" y="24" text-anchor="middle" fill="#393451" font-size="15" font-weight="700">B</text>
+              <text x="270" y="27" fill="#393451" font-size="14" font-style="italic">U</text>
+            </svg>
+          </div>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="q8"><span class="letter">A</span><span>A′ ∩ B′</span></label>
+            <label class="choice"><input type="radio" name="q8"><span class="letter">B</span><span>A ∪ B</span></label>
+            <label class="choice"><input type="radio" name="q8"><span class="letter">C</span><span>A′ ∪ B′</span></label>
+            <label class="choice"><input type="radio" name="q8"><span class="letter">D</span><span>A ∩ B</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="question" data-answer="0" aria-labelledby="question-9">
+          <div class="question-heading" id="question-9"><span class="number">09</span><span>จากแผนภาพเวนน์สามเซต มีสมาชิกที่อยู่ในสองเซตพอดีกี่ตัว?</span></div>
+          <div class="question-diagram">
+            <svg viewBox="0 0 300 180" role="img" aria-labelledby="advanced-three-set-title advanced-three-set-description">
+              <title id="advanced-three-set-title">แผนภาพเวนน์สามเซตพร้อมจำนวนสมาชิกในแต่ละบริเวณ</title>
+              <desc id="advanced-three-set-description">บริเวณเฉพาะ A, B และ C มี 6, 5 และ 4 สมาชิกตามลำดับ บริเวณ A กับ B เท่านั้นมี 3, A กับ C เท่านั้นมี 4, B กับ C เท่านั้นมี 2 และส่วนร่วมทั้งสามมี 1</desc>
+              <rect x="8" y="8" width="284" height="164" rx="3" fill="#fff" stroke="#8c88a5" stroke-width="2"></rect>
+              <circle cx="115" cy="72" r="44" fill="none" stroke="#615a79" stroke-width="2"></circle>
+              <circle cx="185" cy="72" r="44" fill="none" stroke="#615a79" stroke-width="2"></circle>
+              <circle cx="150" cy="116" r="44" fill="none" stroke="#615a79" stroke-width="2"></circle>
+              <text x="94" y="51" fill="#393451" font-size="13">6</text>
+              <text x="193" y="51" fill="#393451" font-size="13">5</text>
+              <text x="145" y="151" fill="#393451" font-size="13">4</text>
+              <text x="150" y="45" fill="#393451" font-size="13">3</text>
+              <text x="112" y="103" fill="#393451" font-size="13">4</text>
+              <text x="181" y="103" fill="#393451" font-size="13">2</text>
+              <text x="147" y="91" fill="#393451" font-size="13" font-weight="700">1</text>
+              <text x="115" y="22" text-anchor="middle" fill="#393451" font-size="13" font-weight="700">A</text>
+              <text x="185" y="22" text-anchor="middle" fill="#393451" font-size="13" font-weight="700">B</text>
+              <text x="150" y="168" fill="#393451" font-size="13" font-weight="700">C</text>
+            </svg>
+          </div>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="q9"><span class="letter">A</span><span>9</span></label>
+            <label class="choice"><input type="radio" name="q9"><span class="letter">B</span><span>10</span></label>
+            <label class="choice"><input type="radio" name="q9"><span class="letter">C</span><span>11</span></label>
+            <label class="choice"><input type="radio" name="q9"><span class="letter">D</span><span>12</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="question" data-answer="1" aria-labelledby="question-10">
+          <div class="question-heading" id="question-10"><span class="number">10</span><span>จากแผนภาพ มีสมาชิกที่อยู่ใน A หรือ B แต่ไม่อยู่ในทั้งสองเซตพร้อมกันกี่ตัว?</span></div>
+          <div class="question-diagram">
+            <svg viewBox="0 0 300 150" role="img" aria-labelledby="advanced-exclusive-title advanced-exclusive-description">
+              <title id="advanced-exclusive-title">แผนภาพเวนน์แสดงจำนวนสมาชิกเฉพาะและส่วนร่วม</title>
+              <desc id="advanced-exclusive-description">บริเวณเฉพาะ A มี 9 สมาชิก ส่วนร่วม A และ B มี 4 สมาชิก และบริเวณเฉพาะ B มี 7 สมาชิก</desc>
+              <rect x="8" y="8" width="284" height="134" rx="3" fill="#fff" stroke="#8c88a5" stroke-width="2"></rect>
+              <circle cx="115" cy="76" r="44" fill="none" stroke="#615a79" stroke-width="2"></circle>
+              <circle cx="185" cy="76" r="44" fill="none" stroke="#615a79" stroke-width="2"></circle>
+              <text x="95" y="80" fill="#393451" font-size="14">9</text>
+              <text x="147" y="80" fill="#393451" font-size="14">4</text>
+              <text x="199" y="80" fill="#393451" font-size="14">7</text>
+              <text x="115" y="24" text-anchor="middle" fill="#393451" font-size="14" font-weight="700">A</text>
+              <text x="185" y="24" text-anchor="middle" fill="#393451" font-size="14" font-weight="700">B</text>
+              <text x="270" y="27" fill="#393451" font-size="14" font-style="italic">U</text>
+            </svg>
+          </div>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="q10"><span class="letter">A</span><span>12</span></label>
+            <label class="choice"><input type="radio" name="q10"><span class="letter">B</span><span>16</span></label>
+            <label class="choice"><input type="radio" name="q10"><span class="letter">C</span><span>20</span></label>
+            <label class="choice"><input type="radio" name="q10"><span class="letter">D</span><span>7</span></label>
+          </div>
+        </fieldset>
+        <button class="quiz-submit" type="submit">ตรวจคำตอบและดูเฉลย</button>
+      </form>
+
+      <details class="answer-key" hidden>
+        <summary>เฉลยและทบทวนคำตอบ</summary>
+        <p class="quiz-result" aria-live="polite"></p>
+        <ol>
+          <li><strong>A</strong> — n(A ∪ B) = 20 + 15 − 8 = 27</li>
+          <li><strong>B</strong> — เมื่อแต่ละเซตเป็นสับเซตของอีกเซต แสดงว่ามีสมาชิกตรงกันทุกตัว</li>
+          <li><strong>A</strong> — จำนวนที่ชอบอย่างน้อยหนึ่งวิชา = 18 + 16 − 8 = 26</li>
+          <li><strong>B</strong> — ส่วนเติมเต็มของ A คือสมาชิกใน U ที่ไม่อยู่ใน A</li>
+          <li><strong>C</strong> — การแจกแจงอินเตอร์เซกชันเหนือยูเนียนได้ (A ∩ B) ∪ (A ∩ C)</li>
+          <li><strong>A</strong> — ส่วนเติมเต็มของยูเนียนเท่ากับอินเตอร์เซกชันของส่วนเติมเต็ม</li>
+          <li><strong>C</strong> — ใช้สูตร 20 + 18 + 15 − 6 − 5 − 4 + 2 = 40</li>
+          <li><strong>A</strong> — พื้นที่นอกทั้ง A และ B คือ (A ∪ B)′ ซึ่งตามกฎเดอมอร์แกนเท่ากับ A′ ∩ B′</li>
+          <li><strong>A</strong> — อยู่ในสองเซตพอดีจึงรวมบริเวณ A∩B, A∩C และ B∩C โดยไม่รวมส่วนกลาง ได้ 3 + 4 + 2 = 9</li>
+          <li><strong>B</strong> — อยู่ใน A หรือ B แต่ไม่อยู่ในทั้งคู่พร้อมกัน คือบริเวณเฉพาะ A และเฉพาะ B ได้ 9 + 7 = 16</li>
+        </ol>
+      </details>
+    </main>
+
+    <footer><span>โรงเรียนนาคประสิทธิ์ · ระบบเรียนรู้คณิตศาสตร์</span><span>คะแนนบันทึกไว้ในอุปกรณ์นี้</span></footer>
+  </body>
+</html>
